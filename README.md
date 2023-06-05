@@ -1,89 +1,153 @@
 <p align="center">
-    <img alt="logo" src="https://img.yzcdn.cn/vant/logo.png" width="120" height="120" style="margin-bottom: 10px;">
+    <img alt="logo" src="https://fastly.jsdelivr.net/npm/@vant/assets/logo.png" width="120" height="120" style="margin-bottom: 10px;">
 </p>
 
-<h3 align="center" style="margin: 30px 0 35px;">Mobile UI Components built on Vue</h3>
+<h1 align="center">Vant</h1>
+
+<p align="center">A lightweight, customizable Vue UI library for mobile web apps.</p>
 
 <p align="center">
-    <img src="https://img.shields.io/npm/v/vant.svg?style=flat-square" alt="npm version" />
-    <img src="https://img.shields.io/codecov/c/github/youzan/vant/dev.svg?style=flat-square" alt="Coverage Status" />
-    <img src="https://travis-ci.org/youzan/vant.svg?branch=master" alt="Build Status" />
-    <img src="https://img.shields.io/npm/dt/vant.svg?style=flat-square" alt="downloads" />
-    <img src="https://img.shields.io/npm/dm/vant.svg?style=flat-square" alt="downloads" />
-    <img src="https://img.badgesize.io/https://unpkg.com/vant/lib/vant.min.js?compression=gzip&style=flat-square&label=JS%20gzip%20size" alt="JS Gzip Size" />
-    <img src="https://img.badgesize.io/https://unpkg.com/vant/lib/index.css?compression=gzip&style=flat-square&label=CSS%20gzip%20size" alt="CSS Gzip Size" />
+    <img src="https://img.shields.io/npm/v/vant?style=flat-square" alt="npm version" />
+    <img src="https://img.shields.io/codecov/c/github/vant-ui/vant/dev.svg?style=flat-square&color=#4fc08d" alt="Coverage Status" />
+    <img src="https://img.shields.io/npm/dm/vant.svg?style=flat-square&color=#4fc08d" alt="downloads" />
+    <img src="https://img.badgesize.io/https://unpkg.com/vant/lib/vant.min.js?compression=gzip&style=flat-square&label=gzip%20size&color=#4fc08d" alt="Gzip Size" />
 </p>
 
 <p align="center">
-  🔥 <a href="https://youzan.github.io/vant">文档网站</a>
+  🔥 <a href="https://vant-contrib.gitee.io/vant">文档网站（国内）</a>
+  &nbsp;
+  🌈 <a href="https://vant-ui.github.io/vant">文档网站（GitHub）</a>
   &nbsp;
   🇨🇳 <a href="./README.zh-CN.md">中文版介绍</a>
-  &nbsp;
-  🚀 <a href="https://github.com/youzan/vant-weapp" target="_blank">小程序版</a>
 </p>
 
 ---
 
 ## Features
 
-* 60+ Reusable components
-* 95% Unit test coverage
-* Extensive documentation and demos
-* Support [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)
-* Support Custom Theme
-* Support i18n
-* Support TS
-* Support SSR
+- 🚀 1KB Component average size (min+gzip)
+- 🚀 70+ High quality components
+- 🚀 Zero third-party dependencies
+- 💪 90%+ Unit test coverage
+- 💪 Written in TypeScript
+- 📖 Extensive documentation and demos
+- 📖 Provide Sketch and Axure design resources
+- 🍭 Support Vue 2 & Vue 3
+- 🍭 Support Nuxt 2 & Nuxt 3, provide [Vant Module](https://github.com/vant-ui/vant-nuxt) for Nuxt
+- 🍭 Support Tree Shaking
+- 🍭 Support Custom Theme
+- 🍭 Support Accessibility (still improving)
+- 🍭 Support Dark Mode
+- 🍭 Support SSR
+- 🌍 Support i18n, built-in 30+ languages
 
 ## Install
 
-```bash
-# Using npm
-npm i vant -S
+Using `npm` to install:
 
-# Using yarn
+```bash
+# install latest Vant for Vue 3 project
+npm i vant
+
+# install Vant 2 for Vue 2 project
+npm i vant@latest-v2
+```
+
+Using `yarn` or `pnpm`:
+
+```bash
+# with yarn
 yarn add vant
+
+# with pnpm
+pnpm add vant
 ```
 
 ## Quickstart
 
 ```js
-import Vue from 'vue';
+import { createApp } from 'vue';
+// 1. Import the components you need
 import { Button } from 'vant';
+// 2. Import the components style
 import 'vant/lib/index.css';
 
-Vue.use(Button);
+const app = createApp();
+
+// 3. Register the components you need
+app.use(Button);
 ```
 
-See more in [Quickstart](https://youzan.github.io/vant#/en-US/quickstart).
-
-## Contribution
-
-Please make sure to read the [Contributing Guide](./.github/CONTRIBUTING.md) before making a pull request.
+See more in [Quickstart](https://vant-ui.github.io/vant#/en-US/quickstart).
 
 ## Browser Support
 
-Modern browsers and Android 4.0+, iOS 7+.
+Vant 2 supports modern browsers and Android >= 4.0、iOS >= 8.0.
+
+Vant 3/4 supports modern browsers and Chrome >= 51、iOS >= 10.0 (same as Vue 3).
+
+## Official Ecosystem
+
+| Project | Description |
+| --- | --- |
+| [vant-weapp](https://github.com/vant-ui/vant-weapp) | WeChat MiniProgram UI |
+| [vant-demo](https://github.com/vant-ui/vant-demo) | Collection of Vant demos |
+| [vant-cli](https://github.com/vant-ui/vant/tree/main/packages/vant-cli) | Scaffold for UI library |
+| [vant-icons](https://github.com/vant-ui/vant/tree/main/packages/vant-icons) | Vant icons |
+| [vant-touch-emulator](https://github.com/vant-ui/vant/tree/main/packages/vant-touch-emulator) | Using vant in desktop browsers |
+| [vant-nuxt](https://github.com/vant-ui/vant-nuxt) | Vant module for Nuxt |
+
+## Community Ecosystem
+
+| Project | Description |
+| --- | --- |
+| [3lang3/react-vant](https://github.com/3lang3/react-vant) | React mobile UI Components based on Vant |
+| [vant-aliapp](https://github.com/ant-move/Vant-Aliapp) | Alipay MiniProgram UI |
+| [taroify](https://gitee.com/mallfoundry/taroify) | Vant Taro |
+| [vant-theme](https://github.com/Aisen60/vant-theme) | Online theme preview built on Vant UI |
+| [@antmjs/vantui](https://github.com/antmjs/vantui) | Mobile UI Components based on Vant, supporting Taro and React |
+| [sfc-playground-vant](https://github.com/zhixiaoqiang/sfc-playground-vant) | Try Vant in the Playground. Currently only Vant 3+ is supported |
 
 ## Links
 
-* [Documentation](https://youzan.github.io/vant)
-* [Changelog](https://youzan.github.io/vant#/en-US/changelog)
-* [Vant Demo](https://github.com/youzan/vant-demo)
-* [Vant Weapp](https://github.com/youzan/vant-weapp)
+- [Documentation](https://vant-ui.github.io/vant)
+- [Changelog](https://vant-ui.github.io/vant#/en-US/changelog)
+- [Discussions](https://github.com/vant-ui/vant/discussions)
 
 ## Preview
 
 You can scan the following QR code to access the demo：
 
-<img src="https://img.yzcdn.cn/vant/preview_qrcode_20180528.png" width="220" height="220" >
+<img src="https://fastly.jsdelivr.net/npm/@vant/assets/preview-qrcode.png" width="220" height="220" >
 
-## Wechat Group
+## Core Team
 
-Scan the qrcode to join our wechat discussion group, please note that you want to join Vant discussion group.
+Core contributors of Vant and Vant Weapp:
 
-<img src="https://img.yzcdn.cn/vant/wechat_20180606.png" width="220" height="292" >
+| [![chenjiahan](https://avatars.githubusercontent.com/u/7237365?s=80&v=4)](https://github.com/chenjiahan/) | [![cookfront](https://avatars.githubusercontent.com/u/4829465?s=80&v=4)](https://github.com/cookfront/) | [![w91](https://avatars.githubusercontent.com/u/2599455?s=80&v=4)](https://github.com/w91/) | [![pangxie1991](https://avatars.githubusercontent.com/u/5961240?s=80&v=4)](https://github.com/pangxie1991/) | [![rex-zsd](https://avatars.githubusercontent.com/u/8767877?s=80&v=4)](https://github.com/rex-zsd/) |
+| :-: | :-: | :-: | :-: | :-: |
+| [chenjiahan](https://github.com/chenjiahan/) | [cookfront](https://github.com/cookfront/) | [wangnaiyi](https://github.com/w91/) | [pangxie](https://github.com/pangxie1991/) | [rex-zsd](https://github.com/rex-zsd/) |
+
+| [![nemo-shen](https://avatars.githubusercontent.com/u/13480805?s=80&v=4)](https://github.com/nemo-shen/) | [![Lindysen](https://avatars.githubusercontent.com/u/33708359?s=80&v=4)](https://github.com/Lindysen/) | [![JakeLaoyu](https://avatars.githubusercontent.com/u/16181940?s=80&v=4)](https://github.com/JakeLaoyu/) | [![landluck](https://avatars.githubusercontent.com/u/27060081?s=80&v=4)](https://github.com/landluck/) | [![wjw-gavin](https://avatars.githubusercontent.com/u/19986739?s=80&v=4)](https://github.com/wjw-gavin/) |
+| :-: | :-: | :-: | :-: | :-: |
+| [nemo-shen](https://github.com/nemo-shen/) | [Lindysen](https://github.com/Lindysen/) | [JakeLaoyu](https://github.com/JakeLaoyu/) | [landluck](https://github.com/landluck/) | [wjw-gavin](https://github.com/wjw-gavin/) |
+
+## All Contributors
+
+Thanks to the following friends for their contributions to Vant:
+
+<a href="https://github.com/vant-ui/vant/graphs/contributors">
+  <img src="https://opencollective.com/vant/contributors.svg?width=890&button=false" alt="contributors">
+</a>
+
+## Contribution Guide
+
+Please make sure to read the [Contributing Guide](./.github/CONTRIBUTING.md) before making a pull request.
+
+## Start On Web IDE
+
+[https://github.dev/youzan/vant](https://github.dev/youzan/vant)
 
 ## LICENSE
 
-[MIT](https://en.wikipedia.org/wiki/MIT_License)
+Vant is [MIT](https://github.com/youzan/vant/blob/main/LICENSE) licensed.

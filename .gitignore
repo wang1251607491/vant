@@ -8,11 +8,12 @@
 node_modules
 package-lock.json
 
+# test
+**/test/coverage
+
 # dist file
 es
 lib
 dist
-docs/dist
+**/site-dist
 changelog.generated.md
-test/coverage
-vetur
